@@ -58,13 +58,13 @@
         **Outputs:**
         - **Output NetCDF file**: The path of the output NetCDF file. This file will contain the calculated bankfull discharge (`Q_bkfl`) and, if requested, the wetted perimeter (`P_bkfl`).
 
-        **Usage Example:**
-        ```
-        python3 _cli/__init__.py bankfull -r 1.5 -v Qrouted -i input.nc -o output.nc
-        ```
-        To additionally estimate the wetted perimeter:
-        ```
-        python3 _cli/__init__.py bankfull -r 1.5 -v Qrouted -i input.nc -o output.nc --wetted_perimeter
-        ```
+        **Example Workflow in Galaxy:**
+        1. Upload your NetCDF input file and configure the tool settings. 
+        2. Set the "Return Period" and "Variable Name" as needed.
+        3. Choose whether to estimate the wetted perimeter.
+        4. Run the tool to get the output NetCDF file with the bankfull discharge and, if selected, the wetted perimeter.
     ]]></help>
+    <citations>
+        <citation type="doi">placeholder</citation>
+    </citations>
 </tool>
